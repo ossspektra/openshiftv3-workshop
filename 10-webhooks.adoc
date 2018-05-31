@@ -18,11 +18,12 @@ In Part I of the Lab we will:
 
 *Step 1: Create new project*
 
-*Remember* to substitute the UserName
+IMPORTANT: Please replace *userxx* with the username assigned to you in
+the commands below.
 
-....
-$ oc new-project scm-web-hooks-UserName --display-name="Test WebHooks"
-....
+----
+$ oc new-project scm-web-hooks-userxx --display-name="Test WebHooks"
+----
 
 *Step 2: Create new application*
 
@@ -108,15 +109,15 @@ scm-web-hooks   172.30.71.191   <none>        8080/TCP   4m
 *Remember* to substitute the UserName.
 
 ....
-$ oc expose service scm-web-hooks --hostname=scm-web-hooks.UserName.apps.osecloud.com
+$ oc expose service scm-web-hooks --hostname=scm-web-hooks.userxx.{{APPS_ADDRESS}}
 NAME            HOST/PORT                                  PATH      SERVICE         LABELS              TLS TERMINATION
-scm-web-hooks   scm-web-hooks.UserName.apps.osecloud.com             scm-web-hooks   app=scm-web-hooks   
+scm-web-hooks   scm-web-hooks.userxx.{{APPS_ADDRESS}}             scm-web-hooks   app=scm-web-hooks   
 ....
 
 *Step 5: Test the application*
 
 * Use the newly created route, in the above case
-`scm-web-hooks.UserName.apps.osecloud.com` and paste it in your browser.
+`scm-web-hooks.userxx.{{APPS_ADDRESS}}` and paste it in your browser.
 * You should see:
 
 image:images/green_deployment.png[image]
@@ -195,4 +196,3 @@ deployments of applications using OpenShift and GitHub Web Hook
 triggers. It should be noted that OpenShift also supports Generic Web
 Hooks.
 
-link:0_toc.adoc[Table Of Contents]
