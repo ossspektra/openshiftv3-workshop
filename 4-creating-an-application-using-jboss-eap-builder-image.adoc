@@ -14,7 +14,7 @@ Applications.
 *Remember* to replace the username before running the command.
 
 ....
-$ oc new-project myjbossapp-UserName --display-name="My JBoss Applications" --description="A place for my JBoss EAP Applications"
+$ oc new-project myjbossapp-userxx --display-name="My JBoss Applications" --description="A place for my JBoss EAP Applications"
 ....
 
 *Step 2: Create an application that uses the JBoss EAP builder image*
@@ -46,9 +46,8 @@ On *Build Configuration* add a new _Environment Variable_.
 
 ....
 name: MAVEN_MIRROR_URL
-value: <nexus_url>/repository/maven-public/
+value: {{NEXUS_URL}}
 
-Ex:-   http://nexus-ci.cloudapps.chicago.openshift3roadshow.com/repository/maven-public/
 ....
 
 *REMEMBER:* Check with your instructor the proper URL for the Nexus
@@ -302,7 +301,7 @@ Route should be already created.
 $ oc get routes
 
 NAME      HOST/PORT                                                      PATH      SERVICES   PORT       TERMINATION
-ks        ks-myjbossapp-Username.apps.osecloud.com                                 ks         8080-tcp   
+ks        ks-myjbossapp-userxx.{{APPS_ADDRESS}}                                    ks         8080-tcp   
 ....
 
 If route does not show, we expose the service `ks` via the command
@@ -322,7 +321,7 @@ Now access the application by using the route you got in the previous
 step. You can use either curl or your browser.
 
 ....
-$ curl ks-myjbossapp-UserName.apps.osecloud.com
+$ curl ks-myjbossapp-userxx.{{APPS_ADDRESS}}
 
  <!-- Plain HTML page that kicks us into the app -->
 <html>
@@ -332,7 +331,7 @@ $ curl ks-myjbossapp-UserName.apps.osecloud.com
 </html>
 ....
 
-Go to https://ks-myjbossapp-Username.apps.osecloud.com via your browser.
+Go to https://ks-myjbossapp-userxx.{{APPS_ADDRESS}} via your browser.
 Please replace your username with yours.
 
 image:images/ks-myjbossapp.png[image]
