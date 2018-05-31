@@ -2,9 +2,7 @@
 Adding Spring Boot S2I Image to the Project Catalog
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-In the last lab to
-link:14.%20Deploy%20a%20Spring%20Boot%20Application.md[deploy a spring
-boot application], we used the S2I image directly from a docker registry
+In the last lab, we used the S2I image directly from a docker registry
 that is outside OpenShift environment. The Spring Boot image was not in
 the catalog. In this lab, we will learn how to add the Spring Boot image
 to the project catalog so that you can deploy the application directly
@@ -13,8 +11,8 @@ from your screen.
 *Step 1:* Clean up the project that you created in the last lab.
 
 Ensure you are in the right project by running `oc project` command. If
-not, change your project by running `oc project spring-UserName`,
-*replacing* the UserName with your own userid.
+not, change your project by running `oc project spring-userxx`,
+*replacing* the userxx with your own userid.
 
 Clean up the contents of this project:
 
@@ -116,4 +114,3 @@ tell your openshift cluster administrator. +
 *Answer* The cluster administrator will add the image to the `openshift`
 project and everyone will start seeing it.
 
-link:0_toc.adoc[Table Of Contents]
