@@ -8,14 +8,17 @@ instances are always running.
 
 *Step 1: Switch to an existing project*
 
-For this exercise, we will be using an already running application. We
-will be using the `mycliproject-UserName` that you created in the
-previous labs. Make sure you are switched to that project by using the
-`oc project` command and *remember* to substitute UserName.
+IMPORTANT: Please replace *userxx* with the username assigned to you in
+the commands below.
 
-....
-$ oc project mycliproject-UserName
-....
+For this exercise, we will be using an already running application. We
+will be using the `mycliproject-userxx` that you created in the
+previous labs. Make sure you are switched to that project by using the
+`oc project` command.
+
+----
+$ oc project mycliproject-userxx
+----
 
 *Step 2: View the deployment config*
 
@@ -252,4 +255,3 @@ image:images/scale_down.jpg[image] twice to remove 2 running pods.
 Congratulations!! In this exercise you have learned about scaling and
 how to scale up/down your application on OpenShift!
 
-link:0_toc.adoc[Table Of Contents]
