@@ -18,9 +18,12 @@ want to download the WAR file on your workstation.
 
 *Step 1: Create project & folder structure*
 
+IMPORTANT: Please replace *userxx* with the username assigned to you in
+the commands below.
+
 [source,sh]
 ----
-oc new-project binarydeploy-UserName
+oc new-project binarydeploy-userxx
 mkdir binarytest && cd binarytest
 mkdir deployments
 ----
@@ -170,4 +173,3 @@ route "myapp" exposed
 
 You can use the route to access the application using the URL.
 
-link:0_toc.adoc[Table Of Contents]
