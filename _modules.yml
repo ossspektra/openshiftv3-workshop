@@ -27,21 +27,21 @@ modules:
     name: Setting up client tools
   1-create-an-app-from-a-docker-image:
     name: Create an App from a Docker image
-  2-create-app-using-docker-build:
+  2-create-an-app-using-docker-build:
     name: Create an App using Docker build
   3-using-web-console:
     name: Using Web Console
-  4-create-app-using-jboss-builder-image:
+  4-creating-an-application-using-jboss-eap-builder-image:
     name: Creating an application using JBoss EAP builder image
   5-using-templates:
     name: Using Templates
-  6-scaling-app-instances:
+  6-scale-up-and-scale-down-and-idle-the-application-instances:
     name: Scale up and Scale down and Idle the application instances
-  7-binary-deployment-war-file:
+  7-binary-deployment-of-a-war-file:
     name: Binary Deployment of a war file
-  8-using-ssl-app:
+  8-using-ssl-in-your-application:
     name: Using SSL in your application
-  9-bluegreen-deployments:
+  9-blue-green-deployments:
     name: Blue-Green Deployments
   10-webhooks:
     name: SCM Web Hooks
