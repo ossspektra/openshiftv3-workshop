@@ -33,11 +33,12 @@ Part I
 
 *Step 1: Create a new project*
 
-*Remember* to substitute the username
+IMPORTANT: Please replace *userxx* with the username assigned to you in
+the commands below.
 
-....
-$ oc new-project bluegreen-UserName --display-name="Blue Green Project" --description="Blue Green Project"
-....
+----
+$ oc new-project bluegreen-userxx --display-name="Blue Green Project" --description="Blue Green Project"
+----
 
 *Step 2: List existing image builder or image streams*
 
@@ -121,11 +122,13 @@ $ oc get service
 
 *Step 7: Create a route for the application*
 
-*Remember* to substitute the username. Expose the service:
+IMPORTANT: Remember to substitute the username.
 
-....
-$ oc expose service blue --hostname=bluegreen.UserName.<<DomainNameSuffix>> --name=bluegreen
-....
+Expose the service:
+
+----
+$ oc expose service blue --hostname=bluegreen.userxx.{{APPS_ADDRESS}} --name=bluegreen
+----
 
 *Step 8: Test the application*
 
@@ -195,7 +198,7 @@ metadata:
   selfLink: /oapi/v1/namespaces/bluegreen-UserName/routes/bluegreen
   uid: 80829b59-a8e0-11e5-be21-fa163ec58dad
 spec:
-  host: bluegreen.UserName.apps.osecloud.com
+  host: bluegreen.userxx.{{APPS_ADDRESS}}
   port:
     targetPort: "8080"
   to:
@@ -273,4 +276,3 @@ concurrently, each with a unique service.
 service being used by the route to publicly advertise the application.
 * You can split traffic accross two services
 
-link:0_toc.adoc[Table Of Contents]
