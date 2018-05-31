@@ -5,12 +5,10 @@ Adding a backend database to the SpringBoot application
 In this exercise we will add a backend database to the previous deployed
 SpringBoot application.
 
-If you already created the SpringBoot application in the previous lab
-link:14.%20Deploy%20a%20Spring%20Boot%20Application.md[deploy a spring
-boot application], just test one more thing. Try your application url
+If you already created the SpringBoot application in the previous lab, just test one more thing. Try your application url
 with `/dbtest`
-(http://bootapp-spring-UserName.apps.devday.ocpcloud.com/dbtest
-*substitute* UserName) extension and it should list you some data from
+(http://bootapp-spring-userxx.{{APPS_ADDRESS}}/dbtest
+*substitute* userxx) extension and it should list you some data from
 the HSQLDB configured within the same app.
 
 Let’s take a moment to understand how this application is connecting to
@@ -87,10 +85,10 @@ lab.
 
 Lets go to CLI.
 
-Change to `spring-UserName` project
+Change to `spring-userxx` project
 
 ....
-oc project spring-UserName
+oc project spring-userxx
 ....
 
 Create a new file with name `application.properties` with the following
@@ -130,7 +128,7 @@ Try a couple of more commands
 ....
 $ oc describe configmap app-props
 Name:       app-props
-Namespace:  spring-UserName
+Namespace:  spring-userxx
 Labels:     <none>
 Annotations:    <none>
 
@@ -292,7 +290,7 @@ Note the contents of this file are what you added to the ConfigMap.
 
 Go back to the `Overview` page. Click on your application url which
 would be something like
-`http://bootapp-spring-UserName.apps.devday.ocpcloud.com/`
+`http://bootapp-spring-userxx.{{APPS_ADDRESS}}/`
 
 It will open a new tab and your running application will greet you
 
@@ -341,4 +339,3 @@ application and also to pass configuration information using ConfigMaps.
 In the next lab, we will learn to use ConfigMaps to dynamically update
 the configuration without restarting the pod!!
 
-link:0_toc.adoc[Table Of Contents]
