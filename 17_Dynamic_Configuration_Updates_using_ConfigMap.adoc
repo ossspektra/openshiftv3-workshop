@@ -6,14 +6,12 @@ In this lab, we will learn how to dynamically update this configuration
 in a running pod. We will do this with an example by changing the
 database connection to use a PostgreSQL database.
 
-In the last
-link:16.%20Adding%20database%20to%20your%20Spring%20Boot%20Application.md[lab],
-we created a configuration to connect to the MySQL database by mounting
+In the last lab, we created a configuration to connect to the MySQL database by mounting
 `application.properties` file using ConfigMap.
 
 *Step 1: Create PostgreSQL Pod*
 
-Ensure you are in the `spring-UserName` project. *Substitute UserName
+Ensure you are in the `spring-userxx` project. *Substitute userxx
 with your own userid*
 
 Based on what you have learnt in the previous labs, create a new
@@ -107,7 +105,7 @@ Edit the datasource parameters as below
 
 ....
     spring.datasource.platform=postgresql
-    spring.datasource.url= jdbc:postgresql://postgresql.spring-UserName:5432/sampledb
+    spring.datasource.url= jdbc:postgresql://postgresql.spring-userxx:5432/sampledb
     spring.datasource.username=user
     spring.datasource.password=password
 ....
@@ -147,7 +145,7 @@ spring.datasource.password=password
 *Step 4: Test the application connection*
 
 Click the application url now i.e
-`http://bootapp-spring-UserName.apps.devday.ocpcloud.com/`. It will open
+`http://bootapp-spring-userxx.{{APPS_ADDRESS}}/`. It will open
 a new tab and greets you
 
 ....
@@ -159,7 +157,7 @@ example `oc logs -f bootapp-2-06a4b` Watch out for connection url in the
 output.
 
 Now try the `/dbtest` endpoint i.e.
-`http://bootapp-spring-veer.apps.devday.ocpcloud.com/dbtest`.
+`http://bootapp-spring-userxx.{{APPS_ADDRESS}}/dbtest`.
 
 *Note* that the output is still from the MySQLDB.
 
@@ -175,7 +173,7 @@ CustomerId: 4 Customer Name: Ann Mysql Age: 32
 Also the pod logs show that connection url is
 
 ....
-connection url: jdbc:mysql://mysql.spring-veer:3306/sampledb?useSSL=false
+connection url: jdbc:mysql://mysql.spring-userxx:3306/sampledb?useSSL=false
 ....
 
 So even after the `application.properties` file is updated in the pod,
@@ -185,7 +183,7 @@ annotation. So we can invoke `/refresh` endpoint to refresh the cache.
 Run the following command from CLI to refresh the cache.
 
 ....
-$ curl -X POST http://bootapp-spring-veer.apps.devday.ocpcloud.com/refresh
+$ curl -X POST http://bootapp-spring-userxx.{{APPS_ADDRESS}}/refresh
 ["spring.datasource.url","spring.datasource.platform"]
 ....
 
@@ -211,7 +209,7 @@ CustomerId: 3 Customer Name: Ann Psql Age: 32
 Also note the logs will show the connection url as
 
 ....
-connection url: jdbc:postgresql://postgresql.spring-UserName:5432/sampledb
+connection url: jdbc:postgresql://postgresql.spring-userxx:5432/sampledb
 ....
 
 *Note* in this exercise, the pod was never redeployed. The
@@ -219,5 +217,3 @@ application.properties were dynamically updated.
 
 *Summary:* In this lab, we have learnt the ConfigMap’s flexibility and
 how it allows dynamic updates to the pod configuration.
-
-link:0_toc.adoc[Table Of Contents]
