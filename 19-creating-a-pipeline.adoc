@@ -13,7 +13,7 @@ deployments on OpenShift.
 * You will be using the projects you created in the "Promiting Applications" lab.
 
 *Step 1:* Create a new project Create a new project with name
-`pipeline-UserName`. _Substitute UserName with your own user name._
+`pipeline-userxx`. _Substitute userxx with your own user name._
 
 *Step 2:* Deploy your CI/CD tool (Jenkins)
 
@@ -63,7 +63,7 @@ pipeline that runs. We will discuss that in the next step.
 This will spin up a Jenkins pod. Give it a few minutes as it takes time
 to download and deploy jenkins. You will also see the URL assigned to
 your Jenkins. It would be something like
-`https://jenkins-pipeline-UserName.apps.devday.osecloud.com`
+`https://jenkins-pipeline-userxx.{{APPS_ADDRESS}}`
 
 If you click on that URL, you will be taken to Jenkins Console. *Note:*
 The browser may complain that the URL is insecure. Click on advanced and
@@ -102,8 +102,8 @@ full access to these projects.
 
 ....
 oc project pipeline-UserName
-oc adm policy add-role-to-user admin system:serviceaccount:pipeline-UserName:jenkins -n testing-UserName
-oc adm policy add-role-to-user admin system:serviceaccount:pipeline-UserName:jenkins -n development-UserName
+oc adm policy add-role-to-user admin system:serviceaccount:pipeline-UserName:jenkins -n testing-userxx
+oc adm policy add-role-to-user admin system:serviceaccount:pipeline-UserName:jenkins -n development-userxx
 ....
 
 For reference the syntax is: `system:serviceaccount:PROJECTNAME:SERVICEACCOUNT`
@@ -184,4 +184,3 @@ understand how to create a pipeline that goes across multiple projects.
 Congratulations!! In this lab, you have learnt how to set up and run
 your own CI/CD pipeline on OpenShift.
 
-link:0_toc.adoc[Table Of Contents]
