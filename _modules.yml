@@ -5,13 +5,13 @@ config:
       value: openshift
     - name: GIT_SERVER_URL
       desc: Git server url
-      value: http://gitlab.apps.openshiftlabs.com
+      value: http://gitlab.apps.ocp.openshiftlabs.com
     - name: CONSOLE_ADDRESS
       desc: HTTP address of the OpenShift console
-      value: https://master.openshiftlabs.com:8443
+      value: https://master.ocp.openshiftlabs.com:8443
     - name: APPS_ADDRESS
       desc: HTTP address suffix of apps deployed on OpenShift
-      value: apps.openshiftlabs.com
+      value: apps.ocp.openshiftlabs.com
     - name: GET_STARTED_CLI_URL
       desc: URL to documentation to configure CLI
       value: https://docs.openshift.com/container-platform/latest/cli_reference/get_started_cli.html
