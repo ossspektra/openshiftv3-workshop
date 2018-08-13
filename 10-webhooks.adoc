@@ -120,7 +120,7 @@ scm-web-hooks   scm-web-hooks.userxx.{{APPS_ADDRESS}}             scm-web-hooks 
 `scm-web-hooks.userxx.{{APPS_ADDRESS}}` and paste it in your browser.
 * You should see:
 
-image::https://github.com/ossspektra/openshiftv3-workshop/raw/master/images/green_deployment.png[image]
+image::https://raw.githubusercontent.com/ossspektra/openshiftv3-workshop/3.6/images/green_deployment.png[image]
 
 [[part-ii]]
 Part II
@@ -148,7 +148,7 @@ this case.
 link.
 * Copy the *GitHub webhook URL*. You will need this URL for next step.
 
-image::https://github.com/ossspektra/openshiftv3-workshop/raw/master/images/github_show_url.png[image]
+image::https://raw.githubusercontent.com/ossspektra/openshiftv3-workshop/3.6/images/github_show_url.png[image]
 
 *Step 2: Configure GitHub repository Web Hook*
 
@@ -163,7 +163,7 @@ image::https://github.com/ossspektra/openshiftv3-workshop/raw/master/images/gith
 * Confirm by adding the *Add Webhook* button in green at the bottom of
 the page.
 
-image::https://github.com/ossspektra/openshiftv3-workshop/raw/master/images/github_add_webhook.jpg[image]
+image::https://raw.githubusercontent.com/ossspektra/openshiftv3-workshop/3.6/images/github_add_webhook.jpg[image]
 
 *Step 3: Redeploy the application*
 
