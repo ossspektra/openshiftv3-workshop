@@ -25,7 +25,7 @@ project that displays a green rectangle.
 * We will then switch the FQDN to from the first application (blue) to
 the second application (green).
 
-image:images/blue_green_deployment.png[image]
+image::https://github.com/ossspektra/openshiftv3-workshop/raw/master/images/blue_green_deployment.png[image]
 
 [[part-i]]
 Part I
