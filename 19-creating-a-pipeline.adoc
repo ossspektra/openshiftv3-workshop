@@ -123,21 +123,21 @@ Untick the following boxes:
 * `Automatically start a new deployment when the deployment configuration changes`
 
 Click "Save" and in the end, the config should look like this.
-image:images/disable-triggers1.png[image]
+image::https://raw.githubusercontent.com/ossspektra/openshiftv3-workshop/3.6/images/disable-triggers1.png[image]
 
 
 Do the same steps for the `testing-UserName` project. It should 
 look similar.
-image:images/disable-triggers2.png[image]
+image::https://raw.githubusercontent.com/ossspektra/openshiftv3-workshop/3.6/images/disable-triggers2.png[image]
 
 
 *Step 5:* Start pipeline
 
 Now click on the `Start Pipeline` button to start the pipeline.
-image:images/pipeline2.jpeg[image]
+image::https://raw.githubusercontent.com/ossspektra/openshiftv3-workshop/3.6/images/pipeline2.jpeg[image]
 
 Notice the pipeline starts and `build` and `deploy` stages are executed.
-image:images/pipeine3.jpeg[image]
+image::https://raw.githubusercontent.com/ossspektra/openshiftv3-workshop/3.6/images/pipeine3.jpeg[image]
 
 Click on the `View log` link for the pipeline. It’ll take you to Jenkins
 and show the logs.
