@@ -42,7 +42,7 @@ scm-web-hooks   2          1         1         config,image(scm-web-hooks:latest
 * The latest and active version for the application is *2*
 * If we display the application in the browser we see:
 
-image::https://github.com/ossspektra/openshiftv3-workshop/raw/master/images/blue_app.jpg[image]
+image::https://raw.githubusercontent.com/ossspektra/openshiftv3-workshop/3.6/images/blue_app.jpg[image]
 
 *Step 2: Rollback the application*
 
@@ -67,5 +67,5 @@ scm-web-hooks   3          1         1         config,image(scm-web-hooks:latest
 a new build configuration.
 * Reloading the application now displays:
 
-image::https://github.com/ossspektra/openshiftv3-workshop/raw/master/images/green_app.jpg[image]
+image::https://raw.githubusercontent.com/ossspektra/openshiftv3-workshop/3.6/images/green_app.jpg[image]
 
