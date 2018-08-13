@@ -50,8 +50,8 @@ Maven mirror URL: {{NEXUS_URL}}
 *REMEMBER:* Check with your instructor the proper URL for the Nexus
 repository.
 
-image::images/jboss_wizard_configuration.png[image]
-image::images/jboss_wizard_configuration2.png[image]
+image::https://github.com/ossspektra/openshiftv3-workshop/raw/master/images/jboss_wizard_configuration.png[image]
+image::https://github.com/ossspektra/openshiftv3-workshop/raw/master/images/jboss_wizard_configuration2.png[image]
 
 Click Next
 Select `Create a secret in ... to be used later`
