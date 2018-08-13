@@ -167,7 +167,7 @@ image::https://github.com/ossspektra/openshiftv3-workshop/raw/master/images/scal
 
 *Note:* You can also scale up and down from the web console by going to
 the project overview page and clicking twice on
-image::scale_up.jpg[image] right next to the pod count circle to
+image::https://github.com/ossspektra/openshiftv3-workshop/raw/master/images/scale_up.jpg[image] right next to the pod count circle to
 add 2 more pods.
 
 On the command line, see how many pods you are running now:
