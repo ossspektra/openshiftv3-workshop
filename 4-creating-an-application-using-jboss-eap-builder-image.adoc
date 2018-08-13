@@ -53,7 +53,7 @@ value: {{NEXUS_URL}}
 *REMEMBER:* Check with your instructor the proper URL for the Nexus
 repository.
 
-image:images/nexus_repo.png[image]
+image:https://raw.githubusercontent.com/ossspektra/openshiftv3-workshop/3.6/images/nexus_repo.png[image]
 
 Click on *Create* and then on *Continue to overview*.
 
@@ -334,7 +334,7 @@ $ curl ks-myjbossapp-userxx.{{APPS_ADDRESS}}
 Go to https://ks-myjbossapp-userxx.{{APPS_ADDRESS}} via your browser.
 Please replace your username with yours.
 
-image:images/ks-myjbossapp.png[image]
+image:https://raw.githubusercontent.com/ossspektra/openshiftv3-workshop/3.6/images/ks-myjbossapp.png[image]
 
 Congratulations! In this exercise you have learned how to create, build
 and deploy a JBoss EAP application using OpenShift’s JBoss EAP Builder
