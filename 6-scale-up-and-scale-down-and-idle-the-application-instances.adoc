@@ -154,7 +154,7 @@ To scale your application we will edit the `deploymentConfig` to 3.
 Open your browser to the Overview page and note you only have one
 instance running.
 
-image:images/scale_updown_overview.png[image]
+image:https://raw.githubusercontent.com/ossspektra/openshiftv3-workshop/3.6/images/scale_updown_overview.png[image]
 
 Now scale your application using the `oc scale` command (remembering to
 specify the `dc`)
@@ -166,7 +166,7 @@ deploymentconfig "time" scaled
 
 If you look at the web console and you will see that there are 3
 instances running now
-image:images/scale_updown_overview_scaled.png[image]
+image:https://raw.githubusercontent.com/ossspektra/openshiftv3-workshop/3.6/images/scale_updown_overview_scaled.png[image]
 
 *Note:* You can also scale up and down from the web console by going to
 the project overview page and clicking twice on
@@ -220,7 +220,7 @@ Idled DeploymentConfig mycliproject-veer/time (dry run)
 Go back to the webconsole. You will notice that the pods show up as
 idled.
 
-image:images/idled_pods.jpeg[image]
+image:https://raw.githubusercontent.com/ossspektra/openshiftv3-workshop/3.6/images/idled_pods.jpeg[image]
 
 At this point the application is idled, the pods are not running and no
 resources are being used by the application. This doesn’t mean that the
@@ -250,7 +250,7 @@ deploymentconfig "time" scaled
 ....
 
 Alternately, you can go to project overview page and click on
-image:images/scale_down.jpg[image] twice to remove 2 running pods.
+image:https://raw.githubusercontent.com/ossspektra/openshiftv3-workshop/3.6/images/scale_down.jpg[image] twice to remove 2 running pods.
 
 Congratulations!! In this exercise you have learned about scaling and
 how to scale up/down your application on OpenShift!
